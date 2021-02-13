@@ -1,0 +1,10 @@
+.box {
+  margin: 2rem auto;
+  width: 10rem;
+  height: 10rem;
+  border: 1px dotted #ccc;
+}
+
+.active {
+  border-color: red;
+}

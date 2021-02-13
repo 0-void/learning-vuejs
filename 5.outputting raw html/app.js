@@ -1,7 +1,7 @@
 const app = Vue.createApp({
   data() {
     return {
-      rawHtml: "<h2>hello world</h2>"
+      rawHtml: "<h2>hello there</h2>"
     };
   },
 });

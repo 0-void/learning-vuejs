@@ -16,11 +16,11 @@
       <button @click="add(10)">add</button>
       <button v-on:click="count--">reduce</button>
       <button @click="reset()">reset</button>
-      <br>
-      <input type="text" name="name" v-on:input="setName($event)"/>
-      <input type="text" name="name" v-on:input="setName"/>
-      <input type="text" name="name" v-model="name"/>
-      <br>
+      <br />
+      <input type="text" name="name" v-on:input="setName($event)" />
+      <input type="text" name="name" v-on:input="setName" />
+      <input type="text" name="name" v-model="name" />
+      <br />
       <div>Your name: {{ name }}</div>
     </div>
     <script src="https://unpkg.com/vue@next"></script>

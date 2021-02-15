@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="favicon.ico" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="your description here" />
+    <meta name="author" content="author-name" />
+    <link rel="apple-touch-icon" href="logo192.png" />
+    <title></title>
+  </head>
+  <body>
+    <div id="app">
+      <div>
+        <input type="text" v-model="value" />
+        <button @click="setText">Set Text</button>
+        <div>{{ text }}</div>
+      </div>
+      <div>
+        <input type="text" ref="userInput"/>
+        <button @click="setTextUsingRef">set text using ref</button>
+        <div>{{ refText }}</div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

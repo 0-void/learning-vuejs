@@ -1,17 +1,37 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <friend-contact
+      v-for="friend of friends"
+      :key="friend.key"
+      :name="friend.name"
+      :email="friend.email"
+      :phone-number="friend.phoneNumber"
+    ></friend-contact>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+  name: "App",
+  data() {
+    return {
+      friends: [
+        {
+          id: 1,
+          name: "suki",
+          phoneNumber: "1212341234192743",
+          email: "test@test.com",
+        },
+        {
+          id: 2,
+          name: "mathi",
+          phoneNumber: "1341234192743",
+          email: "test@google.com",
+        },
+      ],
+    };
+  },
+};
 </script>
 
 <style>
